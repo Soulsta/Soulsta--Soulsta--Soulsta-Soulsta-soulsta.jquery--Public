@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
+  <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+  <Script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true
+      });
+    });
+  </Script>
+  </script>
+  <br>
+  <script>
+
+
+    $(function () {
+      $("#progressbar").progressbar({
+        value: false
+      });
+      $("button").on("click", function (event) {
+        var target = $(event.target),
+          progressbar = $("#progressbar"),
+          progressbarValue = progressbar.find(".ui-progressbar-value");
+
+        if (target.is("#numButton")) {
+          progressbar.progressbar("option", {
+            value: Math.floor(Math.random() * 100)
+          });
+        } else if (target.is("#colorButton")) {
+          progressbarValue.css({
+            "background": '#' + Math.floor(Math.random() * 16777215).toString(16)
+          });
+        } else if (target.is("#falseButton")) {
+          progressbar.progressbar("option", "value", false);
+        }
+      });
+    });
+
+
+
+
+
+  </script>
+
+
+  <nav>
+    <div class="flex-container">
+
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li style="float:right"><a href="https://www.fiatusa.com/fiat-society/history.html">About</a></li>
+        <li><a href="https://www.fiatusa.com/vehicle-selector.sni.html?app=sni">Book now</a></li>
+
+      </ul>
+  </nav>
+
+ 
+    
+
+   <p id="da_img">The Fiat 500</p>
+  <img class="img1" src="ugly_car.jpg" alt="a really ugly_car">
+
+
+  <div id="progressbar"></div>
+  <button id="numButton">Random Value - Determinate</button>
+  <button id="falseButton">Indeterminate</button>
+  <button id="colorButton">Random Color</button>
+
+  <section>
+    <div id="accordion">
+      <h3>History of the Fiat 500</h3>
+      <div>
+        <p>
+          At its conception many car manufacturers were trying to develop the perfect small car with a low retail price;
+          Volkswagen; which actually translates as, peoples car, had achieved great popularity with their, Beetle with
+          its rear engine, a design concept Fiat would adopt in the construction of their own economy car. The rounded
+          shape and rear engine of the Fiat 500 soon went on to inspire other car manufacturers to emulate its design.
+          With permission from Fiat, Steyr-Puch in Austria produced their own quasi 500 model, but it was Fiat’s model
+          that proved popular, not only at home but throughout the European mainland.
+        </p>
+        <p>
+
+          resumed as the 500C with revised front and rear bodywork. It had a 2-door coupe body with sun-roof, which was
+          later complemented by an Estate version. Both continued until 1957 when they were replaced by an all-new,
+          lighter car. The new car had a rear-mounted engine, on the pattern of the Volkswagen Beetle, just like its
+          bigger brother the 1955 Fiat 600. Several car makers followed the now uncommon rear engine configuration at
+          the time and were quite successful. The Neckar version of the 500 was manufactured in Heilbronn under a
+          complicated deal involving NSU, and was introduced in October 1961.[2] Steyr-Puch produced cars based on the
+          Fiat 500 under licence in Graz, Austria.
+        </p>
+      </div>
+      <h3>Engine specs</h3>
+      <div>
+        <ul class="engine">
+          <p> The Fiat 500 has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 1248 cc while the
+            Petrol engine is 1368 cc . It is available with Automatic & Manual transmission.Depending upon the variant
+            and fuel type the 500 has a mileage of & Ground clearance of 500 is 105mm. The 500 is a 4 seater 4 cylinder
+            car and has length of 3657mm, width of 1627mm and a wheelbase of 2300mm</p>
+
+             <br>
+          <ul> Engine type Inline 4, Turbocharged</ul>
+          <br>
+          <ul>Displacement 1.4 l (85 ci)</ul>
+          <br>
+          <ul>Power 135 ps (133 bhp / 99 kw)</ul>
+          <br>
+          <ul>Torque 206 Nm (152 lb-ft)</ul>
+          <br>
+          <ul> Power / liter 96 ps (95 hp)</ul>
+          <br>
+          <ul>Power / weight 123 ps (121 bhp) / t</ul>
+          <br>
+          <ul>Torque / weight 188 Nm (139 lb-ft) / t</ul>
+          <br>
+          <ul> Efficiency 14 PS per l/100 km</ul>
+          <br>
+          <ul>Power / €5000 35 ps</ul>
+          <br>
+          <ul> Transmission 5</ul>
+          <br>  
+          <ul> Layout front engine, front wheel drive</ul>
+
+
+
+        </ul>
+      </div>
+      <h3>Key features </h3>
+      <div>
+        <ul>Power Steering </ul>
+        <br>
+        <ul>,Power Windows</ul>
+        <br>
+        <ul>FrontAnti Lock Braking, </ul>
+        <br>
+        <ul>SystemAir Conditioner</ul>
+        <br>
+        <ul>Driver Airbag</ul>
+        <br>
+        <ul>Passenger Airbag</ul>
+        <br>
+        <ul>Fog Lights</ul>
+        <br>
+        <ul>FrontAlloy Wheels</ul>
+        <br>
+        <ul>Multi-function Steering Wheel</ul>
+
+
+       
+      </div>
+      <h3>Performance and lap times</h3>
+      <div>
+        <p>Lap Times around Tracks</p>
+        <br>
+        <ul>Autocar Dry Handling Track 1:21.70</ul>
+        <br>
+        <ul>Autocar Wet Handling Track 1:11.30</ul>
+        <br>
+        <ul>Balocco 3:17.16</ul>
+        <br>
+        <ul>Hockenheim Short 1:22.50</ul>
+        <br>
+        <ul>Circuit de Nevers Magny-Cours Club 1:35.03</ul>
+        <br>
+        <ul>Mornay 1:35.61</ul>
+        <br>
+        <ul>Marcoussis 1:32.91</ul>
+        <br>
+        <ul>Vairano Handling Course 1:31.11 w</ul>
+        <br>
+        <p>Performance:</p>
+
+        <ul>0 - 50 kph 2.8 s</ul>
+        <br>
+        <ul>0 - 60 kph 3.6 s</ul>
+        <br>
+        <ul>0 - 80 kph 5.3 s</ul>
+        <br>
+        <ul>0 - 100 kph 7.9 s</ul>
+        <br>
+        <ul>0 - 120 kph 11.1 s</ul>
+        <br>
+        <ul>0 - 130 kph 13.4 s</ul>
+        <br>
+        <ul>0 - 140 kph 15.8 s</ul>
+        <br>
+        <ul> 0 - 160 kph 21.7 s</ul>
+        <br>
+        <ul> 1000 m 29.4 s</ul>
+        <br>
+        <ul>60 - 100 kph (4) 6.4 s</ul>
+        <br>
+        <ul>80 - 120 kph (4) 6.9 s</ul>
+        <br>
+        <ul>80 - 120 kph (5) 9.8 s</ul>
+        <br>
+        <ul>70 - 120 kph 13.2 s</ul>
+        <br>
+        <ul> Est. 100 - 140 kph 7.8 s</ul>
+        <br>
+        <ul>Est. 0 - 60 mph 7.6 s</ul>
+        <br>
+        <ul>0 - 100 mph 21.2 s</ul>
+        <br>
+        <ul>Est. 1/8 mile 11.1 s @ 75.8 mph</ul>
+        <br>
+        <ul> 1/4 mile 15.9 s</ul>
+        <br>
+        <ul>Top speed 205 kph (127 mph)</ul>
+        <br>
+        <ul>18m slalom 66.8 kph (41.5 mph)</ul>\
+        <br>
+        <ul> Emissions 174 g/km</ul>
+        <br>
+        <ul>100 kph - 0 37 m (122 ft)</ul>
+        <br>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <p>Date: <input type="text" id="datepicker"></p>
+
+
+
+
+
+
+  <footer>
+
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+
+  </footer>
+</body>
+
+</html>
